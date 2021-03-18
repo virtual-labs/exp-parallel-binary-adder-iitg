@@ -18,7 +18,7 @@ $.fx.speeds._default = 1000;
 var setUI = function(){
     $( "#componentsDialog" ).dialog({
         autoOpen: false,
-        position: ['300','440']
+        position: ['left+200','top+200']
     });
 	
 	//$( "#componentsDialog" ).dialog( "option", "maxHeight", 400 );
