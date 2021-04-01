@@ -702,13 +702,13 @@ $(document).ready(function() {
                 primary: "custom-switch-icon-on"
             }} );
 
-            $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+            $(this).prev('img.indicator').attr('src', 'images/led1.png');
         } else{
             $("#input1").button("option", {icons: {
                 primary: "custom-switch-icon"
             }} );
 
-            $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+            $(this).prev('img.indicator').attr('src', 'images/led0.png');
         }
     });
 
@@ -723,13 +723,13 @@ $(document).ready(function() {
                     primary: "custom-switch-icon-on"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+                $(this).prev('img.indicator').attr('src', 'images/led1.png');
             } else{
                 $("#input2").button("option", "icons", {
                     primary: "custom-switch-icon"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+                $(this).prev('img.indicator').attr('src', 'images/led0.png');
             }
         });
 
@@ -764,13 +764,13 @@ $(document).ready(function() {
                     primary: "custom-switch-icon-on"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+                $(this).prev('img.indicator').attr('src', 'images/led1.png');
             } else{
                 $("#input4").button("option", "icons", {
                     primary: "custom-switch-icon"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+                $(this).prev('img.indicator').attr('src', 'images/led0.png');
             }
         });
 
