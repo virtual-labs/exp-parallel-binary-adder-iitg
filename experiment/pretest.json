@@ -1,0 +1,1 @@
+[{"question":"1.A binary parallel adder produces arithmetic sum in:","answers":{"a":"serial","b":"parallel","c":"sequence","d":"both a and b"},"correctAnswer":"b"},{"question":"2. What are the two types of basic adder circuits?","answers":{"a":"Sum and carry","b":"Half-adder and full-adder","c":"Asynchronous and synchronous","d":"One and two’s-complement"},"correctAnswer":"b"}]
