@@ -1,6 +1,6 @@
 var clearOutputBoxes = function(){
-    $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-    $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+    $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+    $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
 };
 
 var checkGroundVccConnections = function(){
@@ -547,7 +547,7 @@ $(document).ready(function() {
         var circuitInput = '';
 
          
-        $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...'); 
+        $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...'); 
 
         
 
@@ -576,7 +576,7 @@ $(document).ready(function() {
         }
         
 
-        $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
+        $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
         $("#modDialog").dialog( "open" );
 
         //var channelWiring = allWires.join(";");
@@ -607,15 +607,15 @@ $(document).ready(function() {
             var cb = data.result.c;
 
             if(sb === '1'){
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             } else{
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             }
 
             if(cb === '1'){
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             } else{
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             }
 
         });*/
@@ -627,62 +627,62 @@ $(document).ready(function() {
         });*/
 
         if(input1 == 0 && input2==0 && input4==0){
-            //$('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            //$('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             //alert("Please switch on the clock");
             $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             return false;
         }
         else if(input1 == 0 && input2==0 && input4==1)
         {
             $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             return false;
         }
         //fixed statement no need to
         else if(input1 == 0 && input2==1 && input4==0)
         {
              $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             return false;
         }
         else if(input1 == 0 && input2==1 && input4==1)
         {
             $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             return false;
         }
         else if(input1 == 1 && input2==0 && input4==0)
         {
              $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             return false;
         }
          else if(input1 == 1 && input2==0 && input4==1)
         {
              $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             return false;
         }
          else if(input1 == 1 && input2==1 && input4==0)
         {
              $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             return false;
         }
 
          else if(input1 == 1 && input2==1 && input4==1)
         {
              $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             return false;
         }
 
@@ -697,6 +697,7 @@ $(document).ready(function() {
         },
         text:false
     }).click(function(){
+        $("#startButton").click();
         if($('#input1').is(":checked")){
             $("#input1").button("option", {icons: {
                 primary: "custom-switch-icon-on"
@@ -718,6 +719,7 @@ $(document).ready(function() {
         },
         text:false
     }).click(function(){
+        $("#startButton").click();
             if($('#input2').is(":checked")){
                 $("#input2").button("option", "icons", {
                     primary: "custom-switch-icon-on"
@@ -744,13 +746,13 @@ $(document).ready(function() {
                     primary: "custom-switch-icon-on"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+                $(this).prev('img.indicator').attr('src', 'images/led1.png');
             } else{
                 $("#input3").button("option", "icons", {
                     primary: "custom-switch-icon"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+                $(this).prev('img.indicator').attr('src', 'images/led0.png');
             }
         });*/
     $("#input4").button({
@@ -759,6 +761,7 @@ $(document).ready(function() {
         },
         text:false
     }).click(function(){
+        $("#startButton").click();
             if($('#input4').is(":checked")){
                 $("#input4").button("option", "icons", {
                     primary: "custom-switch-icon-on"

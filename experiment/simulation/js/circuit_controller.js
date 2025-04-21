@@ -84,10 +84,9 @@ function CircuitController(){
                 //return false;
                 if((sourceEndPointChannel === 'c4') && (targetEndPointChannel === 'c5') || (sourceEndPointChannel === 'c5') && (targetEndPointChannel === 'c4'))
                 {
-                   
                     return true;
                 }
-                /*else if((sourceEndPointChannel === 'c7') && (targetEndPointChannel === 'c8') || (sourceEndPointChannel === 'c8') && (targetEndPointChannel === 'c7')){
+                else if((sourceEndPointChannel === 'c7') && (targetEndPointChannel === 'c8') || (sourceEndPointChannel === 'c8') && (targetEndPointChannel === 'c7')){
                     return true;
                 }
                 else if((sourceEndPointChannel === 'r1') && (targetEndPointChannel === 'r8') || (sourceEndPointChannel === 'r8') && (targetEndPointChannel === 'r1'))
@@ -107,10 +106,10 @@ function CircuitController(){
                   else if((sourceEndPointChannel === 'c4') && (targetEndPointChannel === 'r1') || (sourceEndPointChannel === 'r1') && (targetEndPointChannel === 'c4'))
                  {
                     return true;
-                 }*/
-
+              
+                 }
                  //---------------------------------------latest modified sections-----------------------------------------------------------------------------//
-                /* else if((sourceEndPointChannel === 'c16') && (targetEndPointChannel !== 'r5') || (sourceEndPointChannel === 'r5') && (targetEndPointChannel !== 'c16'))
+                else if((sourceEndPointChannel === 'c16') && (targetEndPointChannel !== 'r5') || (sourceEndPointChannel === 'r5') && (targetEndPointChannel !== 'c16'))
                  {
                     
                     alert("Connect the output properly");
@@ -122,13 +121,13 @@ function CircuitController(){
                     alert("Connect the output properly"); 
                      return false;
                  }  
-                 */
+                 
                  //---------------------------------------latest modified sections------------------------------------------------------------------------------//    
-                else
-                {
-                    alert("You are trying to make an invalid connection.");
-                    return false;
-                }    
+                // else    
+                // {
+                //     alert("You are trying to make an invalid connection.");
+                //     return false;
+                // }    
             }
 
             return true;
